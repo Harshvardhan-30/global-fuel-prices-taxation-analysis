@@ -9,6 +9,12 @@ This project analyses global fuel prices, taxation, subsidies, and economic deve
 
 The project transforms a global fuel-price dataset into interactive dashboards designed to support data exploration, policy analysis, and supply-chain planning.
 
+## 🚀 Live Tableau Dashboard
+
+Explore the interactive dashboards on Tableau Public:
+
+**[Open the Interactive Tableau Project](https://public.tableau.com/app/profile/harshvardhan.gupta1425/viz/Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Scenario1-FuelTaxationSubsidyPolicy?publish=yes)**
+
 ## 2. Project Objectives
 
 - Analyse global petrol, diesel, and LPG price variations.
