@@ -9,11 +9,25 @@ This project analyses global fuel prices, taxation, subsidies, and economic deve
 
 The project transforms a global fuel-price dataset into interactive dashboards designed to support data exploration, policy analysis, and supply-chain planning.
 
-## 🚀 Live Tableau Dashboard
+## 🚀 Live Project Demonstration
 
-Explore the interactive dashboards on Tableau Public:
+### 🌐 Project Website
+
+Visit the live website to explore the project overview and interact with the embedded Tableau dashboard.
+
+**[Open the Live Project Website](https://fuel-prices-taxation-dashboard.onrender.com)**
+
+### 📊 Interactive Tableau Dashboard
+
+Access the published Tableau Public workbook directly to explore the interactive visualisations and scenario-based dashboards.
 
 **[Open the Interactive Tableau Project](https://public.tableau.com/app/profile/harshvardhan.gupta1425/viz/Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Scenario1-FuelTaxationSubsidyPolicy?publish=yes)**
+
+### 💻 Source Code and Documentation
+
+**[View the GitHub Repository](https://github.com/Harshvardhan-30/global-fuel-prices-taxation-analysis)**
+
+The repository contains project documentation, dataset files, Tableau project resources, and the source code for the Flask website.
 
 ## 2. Project Objectives
 
