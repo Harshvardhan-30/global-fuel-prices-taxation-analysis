@@ -1,63 +1,246 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Interactive Tableau analysis of global fuel prices, taxation, and subsidies.">
+
+  <meta name="description"
+        content="Interactive Tableau Story analyzing global fuel prices, taxation, and subsidies.">
+
   <title>Global Fuel Analytics | Project Demo</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='styles.css') }}">
 </head>
+
 <body>
+
+  <!-- Website Header -->
   <header class="site-header">
     <div class="brand-mark" aria-hidden="true">GF</div>
+
     <div class="brand-copy">
       <p class="eyebrow">TABLEAU PUBLIC PROJECT</p>
       <h1>Global Fuel Analytics</h1>
-      <p class="subtitle">Fuel prices · Taxation · Subsidies · Economic patterns</p>
+      <p class="subtitle">
+        Fuel prices · Taxation · Subsidies · Economic patterns
+      </p>
     </div>
-    <a class="top-link" href="https://public.tableau.com/app/profile/harshvardhan.gupta1425/viz/Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Scenario1-FuelTaxationSubsidyPolicy?publish=yes" target="_blank" rel="noopener noreferrer">Open in Tableau ↗</a>
+
+    <a class="top-link"
+       href="https://public.tableau.com/app/profile/harshvardhan.gupta1425/viz/Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Story1"
+       target="_blank"
+       rel="noopener noreferrer">
+      Open in Tableau ↗
+    </a>
   </header>
 
+
   <main>
+
+    <!-- Project Introduction -->
     <section class="intro-card">
       <div>
         <p class="eyebrow">INTERACTIVE PROJECT DEMO</p>
+
         <h2>Explore the global fuel-price landscape</h2>
-        <p class="intro-text">Explore the published Tableau workbook to compare fuel taxation, subsidy policies, country-level prices, supply-chain patterns, and economic-development indicators. Use the workbook tabs and available filters to navigate the analysis.</p>
+
+        <p class="intro-text">
+          Explore the published Tableau Story to compare fuel taxation,
+          subsidy policies, country-level prices, supply-chain patterns,
+          and economic-development indicators. Navigate through the
+          three scenarios to explore the analysis.
+        </p>
       </div>
+
       <div class="scope-tags" aria-label="Project topics">
-        <span>84 countries*</span><span>7 regions*</span><span>2020–2026*</span>
+        <span>84 countries*</span>
+        <span>7 regions*</span>
+        <span>2020–2026*</span>
       </div>
-      <p class="data-note">*Dataset coverage stated in the project documentation; this page embeds the published Tableau view and does not independently refresh the source dataset.</p>
+
+      <p class="data-note">
+        *Dataset coverage stated in the project documentation. This page
+        embeds the published Tableau Story and does not independently
+        refresh the source dataset.
+      </p>
     </section>
 
+
+    <!-- Tableau Story -->
     <section class="dashboard-section" aria-labelledby="dashboard-title">
+
       <div class="section-heading">
         <div>
           <p class="eyebrow">PUBLISHED VISUALIZATION</p>
-          <h2 id="dashboard-title">Fuel Taxation &amp; Subsidy Policy</h2>
+          <h2 id="dashboard-title">
+            Global Fuel Prices and Taxation Trends
+          </h2>
         </div>
-        <span class="live-badge"><span></span> Tableau Public</span>
+
+        <span class="live-badge">
+          <span></span>
+          Tableau Public
+        </span>
       </div>
+
+
+      <!-- Tableau Story Embed -->
       <div class="tableau-frame">
-        <iframe
-          title="Global Fuel Prices and Taxation Trends — Scenario 1 dashboard"
-          src="{{ tableau_url }}"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
+
+        <div
+          class="tableauPlaceholder"
+          id="globalFuelStory"
+          style="position: relative; width: 100%;">
+
+          <noscript>
+            <p>
+              JavaScript is required to display the interactive Tableau Story.
+            </p>
+
+            <a
+              href="https://public.tableau.com/app/profile/harshvardhan.gupta1425/viz/Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Story1"
+              target="_blank"
+              rel="noopener noreferrer">
+              Open the Global Fuel Prices and Taxation Trends Story
+              on Tableau Public
+            </a>
+          </noscript>
+
+          <object
+            class="tableauViz"
+            style="display: none;">
+
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F">
+
+            <param
+              name="embed_code_version"
+              value="3">
+
+            <param
+              name="site_root"
+              value="">
+
+            <param
+              name="name"
+              value="Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Story1">
+
+            <param name="tabs" value="yes">
+            <param name="toolbar" value="yes">
+            <param name="animate_transition" value="yes">
+            <param name="display_static_image" value="yes">
+            <param name="display_spinner" value="yes">
+            <param name="display_overlay" value="yes">
+            <param name="display_count" value="yes">
+            <param name="language" value="en-US">
+
+          </object>
+        </div>
+
+
+        <!-- Load Tableau's official JavaScript API -->
+        <script>
+          (function () {
+            var container = document.getElementById("globalFuelStory");
+
+            var tableauObject =
+              container.getElementsByTagName("object")[0];
+
+            function resizeTableau() {
+              tableauObject.style.width = "100%";
+              tableauObject.style.height =
+                Math.max(800, window.innerHeight) + "px";
+            }
+
+            resizeTableau();
+
+            window.addEventListener("resize", resizeTableau);
+
+            var tableauScript = document.createElement("script");
+
+            tableauScript.src =
+              "https://public.tableau.com/javascripts/api/viz_v1.js";
+
+            tableauObject.parentNode.insertBefore(
+              tableauScript,
+              tableauObject
+            );
+          })();
+        </script>
+
       </div>
-      <p class="embed-help">If the visualization does not appear, open it directly in Tableau Public using the button above. The workbook must be public and internet access is required.</p>
+
+
+      <p class="embed-help">
+        If the interactive Story does not appear, open it directly in
+        Tableau Public using the button above. An internet connection
+        is required.
+      </p>
+
     </section>
 
+
+    <!-- Project Scenarios -->
     <section class="scenario-grid" aria-label="Project scenarios">
-      <article class="scenario-card"><span class="scenario-number">01</span><h3>Taxation &amp; Subsidy Policy</h3><p>Explore country taxation, regional fuel-price comparisons, and subsidy categories.</p></article>
-      <article class="scenario-card"><span class="scenario-number">02</span><h3>Global Prices &amp; Supply Chain</h3><p>Compare higher- and lower-price countries and review historical fuel-price patterns.</p></article>
-      <article class="scenario-card"><span class="scenario-number">03</span><h3>Economic Development</h3><p>Explore fuel-price and taxation patterns across income groups and available filters.</p></article>
+
+      <article class="scenario-card">
+        <span class="scenario-number">01</span>
+
+        <h3>Taxation &amp; Subsidy Policy</h3>
+
+        <p>
+          Explore country taxation, regional fuel-price comparisons,
+          and subsidy categories.
+        </p>
+      </article>
+
+
+      <article class="scenario-card">
+        <span class="scenario-number">02</span>
+
+        <h3>Global Prices &amp; Supply Chain</h3>
+
+        <p>
+          Compare higher- and lower-price countries and review
+          historical fuel-price patterns.
+        </p>
+      </article>
+
+
+      <article class="scenario-card">
+        <span class="scenario-number">03</span>
+
+        <h3>Economic Development</h3>
+
+        <p>
+          Explore fuel-price and taxation patterns across income
+          groups and available filters.
+        </p>
+      </article>
+
     </section>
-    <p class="interpretation-note"><strong>Interpretation note:</strong> The dashboards support exploratory comparisons. An observed relationship between fuel prices, taxation, subsidies, or economic indicators does not by itself prove causation.</p>
+
+
+    <!-- Interpretation Note -->
+    <p class="interpretation-note">
+      <strong>Interpretation note:</strong>
+      The dashboards support exploratory comparisons. An observed
+      relationship between fuel prices, taxation, subsidies, or
+      economic indicators does not by itself prove causation.
+    </p>
+
   </main>
 
-  <footer><span>Global Fuel Prices and Taxation Trends</span><span>Built with Flask · Visualizations hosted by Tableau Public</span></footer>
+
+  <!-- Website Footer -->
+  <footer>
+    <span>Global Fuel Prices and Taxation Trends</span>
+    <span>Built with Flask · Visualizations hosted by Tableau Public</span>
+  </footer>
+
 </body>
 </html>
+```
