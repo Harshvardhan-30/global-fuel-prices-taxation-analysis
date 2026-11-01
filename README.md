@@ -21,7 +21,7 @@ Visit the live website to explore the project overview and interact with the emb
 
 Access the published Tableau Public workbook directly to explore the interactive visualisations and scenario-based dashboards.
 
-**[Open the Interactive Tableau Project](https://public.tableau.com/app/profile/harshvardhan.gupta1425/viz/Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Scenario1-FuelTaxationSubsidyPolicy?publish=yes)**
+**[Open the Interactive Tableau Story](https://public.tableau.com/app/profile/harshvardhan.gupta1425/viz/Global_Fuel_Prices_and_Taxation_Trends_17932843176370/Story1)**
 
 ### 💻 Source Code and Documentation
 
